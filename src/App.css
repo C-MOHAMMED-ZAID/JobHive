@@ -1,38 +1,102 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background:  #f4f6f8;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.main-title {
   text-align: center;
+  color: #222;
+  margin-bottom: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input,
+select,
+button {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.job-table th,
+.job-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.job-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.status-applied {
+  background-color: #0e69fb;
+}
+.status-interview {
+  background-color: #ffa200;
+}
+.status-rejected {
+  background-color: #ff1d1d;
+}
+.status-offer {
+  background-color: #11e09b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.actions button {
+    margin-right: 8px;
+    background-color: transparent;
+    color: #e53935;
+    border: 1px solid #e53935;
+
+
+}
+.actions button:hover{
+    background-color: #e53935;
+    color: white;
+    transition: background-color 0.3s ease;
 }
