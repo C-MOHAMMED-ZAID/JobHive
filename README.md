@@ -4,7 +4,7 @@ JobHive is a lightweight React-based web app designed to help users easily manag
 
 ---
 
-Check Out here: https://jobhive-k1n1qy8wf-c-mohammed-zaids-projects.vercel.app/
+Check Out here: https://jobhive-23fnb0ubl-zaid-working-project.vercel.app/
 
 ---
 
